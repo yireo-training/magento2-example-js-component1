@@ -1,0 +1,18 @@
+<?php
+/** @var $block Yireo\ExampleJsComponent\Block\Example */
+?>
+<div style="border: 1px solid #00A5E3; background-color: #efefef; padding: 10px;">
+    <div id="example-output">This should be replaced with some example</div>
+</div>
+<script>
+    require(["example"], function (example) {
+        if (example == 'undefined' || example == null) {
+            console.log('[ExampleJsComponent] Unable to load JS component');
+            return;
+        }
+
+        var config = {'element': '#example-output', 'text': '<?php echo $block->getMessage(); ?>'};
+
+        example(config);
+    });
+</script>
