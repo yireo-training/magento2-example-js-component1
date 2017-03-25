@@ -4,9 +4,8 @@ define([
 
     "use strict";
 
-    var example = function (config) {
+    var example = function (config, element) {
 
-        var element = config.element;
         var text = config.text;
 
         var message = '[ExampleJsComponent] Message = ' + text;

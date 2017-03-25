@@ -7,12 +7,13 @@
 <script>
     require(["example"], function (example) {
         if (example == 'undefined' || example == null) {
-            console.log('[ExampleJsComponent] Unable to load JS component');
+            //console.log('[ExampleJsComponent] Unable to load JS component');
             return;
         }
 
-        var config = {'element': '#example-output', 'text': '<?php echo $block->getMessage(); ?>'};
+        var config = {'text': '<?php echo $block->getMessage(); ?>'};
+        var element = '#example-output';
 
-        example(config);
+        example(config, element);
     });
 </script>
