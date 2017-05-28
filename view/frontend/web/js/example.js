@@ -8,7 +8,7 @@ define([
 
         var text = config.text;
 
-        var message = '[ExampleJsComponent] Message = ' + text;
+        var message = '[ExampleJsComponent1] Message = ' + text;
         $(element).html(message);
         console.log(message);
     };

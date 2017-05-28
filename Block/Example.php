@@ -1,5 +1,5 @@
 <?php
-namespace Yireo\ExampleJsComponent\Block;
+namespace Yireo\ExampleJsComponent1\Block;
 
 class Example extends \Magento\Framework\View\Element\Template
 {
