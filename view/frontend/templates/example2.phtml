@@ -1,13 +1,15 @@
 <?php
 /** @var $block Yireo\ExampleJsComponent1\Block\Example */
 ?>
-<div style="border: 1px solid #00A5E3; background-color: #efefef; padding: 10px;">
-    <div id="example-output">This should be replaced with some example</div>
-</div>
 <script type="text/x-magento-init">
     {
         "#example-output": {
-            "example":{"element":"#example-output", "text":"<?php echo $block->getMessage(); ?>"}
+            "example":{"text":"<?php echo $block->getMessage(); ?>"}
         }
     }
 </script>
+
+<div style="border: 1px solid #00A5E3; background-color: #efefef; padding: 10px;">
+    <div id="example-output">This should be replaced with some example</div>
+</div>
+
